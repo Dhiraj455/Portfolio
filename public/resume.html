@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhiraj Shelke - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            background: #0a0a0f;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .page-container {
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            padding: 80px 20px 40px 20px;
+        }
+        .a4-container {
+            width: 210mm;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            padding: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .a4-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 61, 0.3), transparent);
+        }
+        
+        /* Navigation - matches main site */
+        .nav-overlay {
+            position: fixed;
+            top: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 50;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            background: rgba(24, 24, 27, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(129, 140, 248, 0.5);
+            border-radius: 16px;
+            padding: 8px 40px;
+        }
+        .nav-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            transform: scale(1.05);
+        }
+        .nav-item.active {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+        
+        @media print {
+            @page {
+                margin: 1cm;
+                size: A4;
+            }
+            body { 
+                margin: 0; 
+                padding: 0; 
+                background: white !important;
+            }
+            .page-container {
+                background: white !important;
+                padding: 0 !important;
+            }
+            .a4-container { 
+                margin: 0; 
+                padding: 20px;
+                box-shadow: none !important; 
+                border: none; 
+                border-radius: 0 !important;
+                max-width: none !important;
+                width: 100% !important;
+            }
+            .a4-container::before {
+                display: none;
+            }
+            .no-print, .nav-overlay { 
+                display: none !important; 
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav {
+                gap: 16px;
+                padding: 6px 20px;
+            }
+            .nav-item {
+                width: 36px;
+                height: 36px;
+            }
+            .page-container {
+                padding: 60px 16px 20px 16px;
+            }
+            .a4-container {
+                padding: 32px 24px;
+                border-radius: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-overlay { display: none; }
+            .page-container {
+                padding: 20px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="nav-overlay no-print">
+        <nav class="nav">
+            <a href="/#home" class="nav-item" title="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9,22 9,12 15,12 15,22"/>
+                </svg>
+            </a>
+            <a href="/#about" class="nav-item" title="About">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                </svg>
+            </a>
+            <a href="/#projects" class="nav-item" title="Experience">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+            </a>
+            <a href="/resume.html" class="nav-item active" title="Resume">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14,2 14,8 20,8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10,9 9,9 8,9"/>
+                </svg>
+            </a>
+            <a href="/#contact" class="nav-item" title="Contact">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Resume Container -->
+        <div class="a4-container">
+        
+        <!-- Header -->
+        <header class="text-center pb-4 border-b border-gray-200">
+            <h1 class="text-3xl font-bold text-gray-800 tracking-tight">DHIRAJ SHELKE</h1>
+            <h2 class="text-lg font-medium text-gray-600 mt-1">Software Engineer</h2>
+            <div class="flex justify-center items-center space-x-4 mt-2 text-xs text-gray-600">
+                <span>dhirajshelke.hotmail@gmail.com</span>
+                <span>|</span>
+                <span>Chicago, IL - 60607</span>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/dhiraj-shelke-27b808201/" target="_blank" class="hover:text-blue-600">LinkedIn</a>
+                <span>|</span>
+                <a href="https://github.com/Dhiraj455" target="_blank" class="hover:text-blue-600">GitHub</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="mt-4">
+            <p class="text-gray-700 text-xs text-center text-justify leading-relaxed">
+                Software Engineer Intern at <b>Fetch Rewards</b> and Graduate Teaching Assistant at <b>University of Illinois Chicago</b>. Currently pursuing <b>Master of Science in Computer Science</b> with a <b>3.9 GPA</b>, expected graduation in May 2026. Passionate about <b>mobile development</b> using <b>Kotlin</b> and <b>Jetpack Compose</b>, <b>full-stack engineering</b> with <b>React.js</b>, <b>Node.js</b>, and <b>AI/ML applications</b> using <b>TensorFlow</b> and <b>Python</b>. Previously completed <b>Bachelor of Engineering in Information Technology</b> with an outstanding <b>CGPA of 9.59/10</b> from SIES Graduate School of Technology, Mumbai University.
+            </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mt-4">
+            <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wider mb-2 border-b pb-1">Technical Skills</h3>
+            <div class="text-xs text-gray-700 space-y-1">
+                <p><b>Programming Languages:</b> <b>C++</b>, <b>Python</b>, <b>Java</b>, <b>TypeScript</b>, <b>Kotlin</b>, <b>Ruby</b></p>
+                <p><b>Frontend & Mobile:</b> <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>React.js</b>, <b>Bootstrap</b>, <b>Flutter</b>, <b>Jetpack Compose</b></p>
+                <p><b>Backend & APIs:</b> <b>Node.js</b>, <b>Django</b>, <b>Flask</b>, <b>REST APIs</b>, <b>Express.js</b>, <b>Nest.js</b></p>
+                <p><b>Databases:</b> <b>MongoDB</b>, <b>PostgreSQL</b>, <b>MySQL</b>, <b>Redis</b>, <b>Firebase</b></p>
+                <p><b>Data Science & ML:</b> <b>NumPy</b>, <b>Pandas</b>, <b>Matplotlib</b>, <b>Seaborn</b>, <b>TensorFlow</b>, <b>Scikit-learn</b>, <b>Keras</b></p>
+                <p><b>Cloud & Tools:</b> <b>AWS</b> (EC2, Lambda, S3), <b>Docker</b>, <b>GitHub</b>, <b>CI/CD</b>, <b>Linux</b>, <b>Android Studio</b>, <b>Jenkins</b>, <b>Jira</b>, <b>Postman</b></p>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="mt-4">
+            <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wider mb-2 border-b pb-1">Professional Experience</h3>
+            
+            <!-- Fetch Rewards -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-sm font-bold text-gray-800">Fetch Rewards</h4>
+                    <span class="text-xs font-medium text-gray-500">May 2025 – Aug 2025</span>
+                </div>
+                <p class="text-xs text-gray-600 font-semibold">Software Engineer Intern</p>
+                <p class="text-xs text-gray-500 mb-1">Chicago, IL</p>
+                <ul class="list-disc list-outside mt-2 ml-4 text-xs text-gray-700 space-y-1.5">
+                    <li>Built high-performance <b>Android apps</b> using <b>Kotlin</b> and <b>Jetpack Compose</b>, collaborating with cross-functional teams to integrate <b>backend services</b>.</li>
+                    <li>Developed new features for the <b>Points Hub</b>, one of the most visited screens in the app, enhancing <b>UI/UX</b> with animations, improving navigation, and increasing <b>user engagement</b>.</li>
+                    <li>Increased <b>modularization</b> of app modules by extracting features into decoupled <b>data</b>, <b>domain</b>, <b>feature</b>, and <b>UI modules</b>, reducing build times and improving maintainability.</li>
+                    <li>Participated in <b>AI Week Hackathon</b>, developing an <b>AI-powered Slack bot</b> for <b>QA assistance</b> to identify the responsible QA person for task completion.</li>
+                    <li>Contributed to app stability, achieving <b>99.91% crash-free sessions</b> reported by <b>Crashlytics</b>.</li>
+                </ul>
+            </div>
+
+            <!-- UIC -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-sm font-bold text-gray-800">UIC College of Engineering</h4>
+                    <span class="text-xs font-medium text-gray-500">Jan 2025 – May 2025</span>
+                </div>
+                <p class="text-xs text-gray-600 font-semibold">Graduate Teaching Assistant</p>
+                <p class="text-xs text-gray-500 mb-1">Chicago, IL</p>
+                <ul class="list-disc list-outside mt-2 ml-4 text-xs text-gray-700 space-y-1.5">
+                    <li>Assisted in <b>CS 478: Mobile Application Development</b> and <b>CS 540: Advanced Topics in Software Engineering</b>, supporting students with concepts and doubts.</li>
+                    <li>Graded <b>assignments</b> and <b>projects</b>, ensuring timely and fair evaluation.</li>
+                    <li>Supported students by clarifying concepts and providing guidance during <b>office hours</b>.</li>
+                </ul>
+            </div>
+
+            <!-- Ambola Health -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-sm font-bold text-gray-800">Ambola Health Pvt. Ltd</h4>
+                    <span class="text-xs font-medium text-gray-500">Nov 2023 – Jan 2024</span>
+                </div>
+                <p class="text-xs text-gray-600 font-semibold">Web Developer Intern</p>
+                <p class="text-xs text-gray-500 mb-1">Remote</p>
+                <ul class="list-disc list-outside mt-2 ml-4 text-xs text-gray-700 space-y-1.5">
+                    <li>Developed the <b>Bharat One Care</b> website for managing <b>patient</b>, <b>hospital</b>, and <b>doctor accounts</b>, focusing on <b>hospital management</b> and <b>doctor assignments</b>.</li>
+                    <li>Contributed to <b>UI development</b> (<b>Node.js</b>, <b>React.js</b>) and handled <b>server hosting</b>, <b>deployment</b>, and <b>backend services</b> using <b>Firebase</b>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mt-4">
+            <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wider mb-2 border-b pb-1">Projects</h3>
+            
+            <!-- Aim Assist -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-sm font-bold text-gray-800">Aim Assist</h4>
+                    <span class="text-xs font-medium text-gray-500">IoT Project</span>
+                </div>
+                <p class="text-xs text-gray-700 mt-1">
+                    An <b>IoT project</b> used for training and education purposes of shooting to improve the accuracy of aim or users' shooting skills and provide <b>real-time feedback</b> and suggestions. Features <b>laser module</b> in the gun instead of physical bullets to reduce training costs while maintaining accuracy and <b>LDR sensors</b> on shooting board to detect laser. Users' processed data with progress, feedback and suggestions are accessible from <b>web</b> and <b>mobile application</b>. The shooting board simulates real shooting scenarios with <b>DC motors</b> and wheels for movement.
+                </p>
+                <p class="text-xs text-gray-600 mt-1"><b>Technologies:</b> <b>Raspberry Pi</b>, <b>Arduino Uno WIFI</b>, <b>Next.js</b>, <b>Flutter</b>, <b>MongoDB</b></p>
+            </div>
+
+            <!-- Vitamin Deficiency Detection -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-sm font-bold text-gray-800">Vitamin Deficiency Detection</h4>
+                    <span class="text-xs font-medium text-gray-500">ML/AI Project</span>
+                </div>
+                <p class="text-xs text-gray-700 mt-1">
+                    Developed a <b>deep learning model</b> using <b>TensorFlow</b> and <b>Keras</b> to detect vitamin deficiencies from images of nails, eyes, etc. Built and trained the model for <b>image compression</b> and <b>deficiency analysis</b>. Developed an <b>Android app</b> using <b>Kotlin</b> and <b>Jetpack Compose</b> for <b>real-time image analysis</b>.
+                </p>
+                <p class="text-xs text-gray-600 mt-1"><b>Technologies:</b> <b>Python</b>, <b>TensorFlow</b>, <b>Keras</b>, <b>Kotlin</b>, <b>Android Studio</b>, <b>Jetpack Compose</b></p>
+            </div>
+
+            <!-- Art Selling Website -->
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-sm font-bold text-gray-800">Art Selling Website</h4>
+                    <span class="text-xs font-medium text-gray-500">E-commerce Project</span>
+                </div>
+                <p class="text-xs text-gray-700 mt-1">
+                    An <b>e-commerce web application</b> serves as a platform for painters and sketch artists to exhibit their artwork and offer it for sale. Customers have the convenience of placing orders via the secure <b>Razorpay payment gateway</b> and can easily monitor the progress of their orders. Artists can follow on the <b>shipment status</b> of their sold artwork, ensuring a smooth delivery process.
+                </p>
+                <p class="text-xs text-gray-600 mt-1"><b>Technologies:</b> <b>MongoDB</b>, <b>Express.js</b>, <b>React.js</b>, <b>Node.js</b>, <b>Razorpay</b></p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mt-4">
+            <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wider mb-2 border-b pb-1">Education</h3>
+            <div class="text-xs space-y-2">
+                <div>
+                    <div class="flex justify-between">
+                        <p class="font-bold text-gray-800">Master of Science in Computer Science</p>
+                        <p class="text-gray-600">Expected May 2026</p>
+                    </div>
+                    <p class="text-gray-700">University of Illinois Chicago, Chicago, IL</p>
+                    <p class="text-gray-600 mt-0.5"><b>GPA:</b> <b>3.9/4.0</b></p>
+                </div>
+                <div>
+                    <div class="flex justify-between">
+                        <p class="font-bold text-gray-800">Bachelor of Engineering in Information Technology</p>
+                        <p class="text-gray-600">June 2024</p>
+                    </div>
+                    <p class="text-gray-700">SIES Graduate School of Technology, Mumbai University, India</p>
+                    <p class="text-gray-600 mt-0.5"><b>CGPA:</b> <b>9.59/10</b></p>
+                    <p class="text-gray-600 mt-0.5 text-xs"><b>Relevant Coursework:</b> Artificial Intelligence and Data Science, Operating Systems, Data Structures and Analysis, Advanced Data Structures and Analysis, Database Management System, Computer Network and Network Design, Computer Organization and Architecture, Software Engineering, Image Processing</p>
+                </div>
+            </div>
+        </section>
+        
+        </div> <!-- End Resume Container -->
+        
+        <!-- Print Button -->
+        <div class="text-center mt-8 no-print">
+            <button onclick="window.print()" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-8 rounded-full hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                </svg>
+                Print or Save as PDF
+            </button>
+        </div>
+        
+    </div> <!-- End Page Container -->
+
+</body>
+</html>
