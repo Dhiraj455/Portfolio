@@ -688,7 +688,7 @@ BUILT FOR SCALE
                     <div className="flex items-center justify-between mb-3">
                       <div>
                         <h5 className="text-lg font-semibold text-white">Ambola Health Pvt. Ltd</h5>
-                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Nov 2023 - Jan 2024</p>
+                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Nov 2023 - Feb 2024</p>
                             </div>
                           </div>
                     <ul className="space-y-2 text-white/80 text-sm ml-4">
@@ -698,6 +698,7 @@ BUILT FOR SCALE
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Node.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
+<span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Typescript</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Firebase</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Web Development</span>
                     </div>
@@ -708,7 +709,7 @@ BUILT FOR SCALE
                     <div className="flex items-center justify-between mb-3">
                       <div>
                         <h5 className="text-lg font-semibold text-white">Westinbridge Consulting Pvt Ltd</h5>
-                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • April 2023 - May 2023</p>
+                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • April 2023 - July 2023</p>
                         </div>
                         </div>
                     <ul className="space-y-2 text-white/80 text-sm ml-4">
@@ -719,6 +720,7 @@ BUILT FOR SCALE
                             </ul>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
+<span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Typescript</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Nest.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">PostgreSQL</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Web Scraping</span>
@@ -763,6 +765,7 @@ BUILT FOR SCALE
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">MongoDB</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Express.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
+<span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Typescript</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Node.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Team Leadership</span>
                     </div>
