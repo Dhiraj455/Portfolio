@@ -7,7 +7,19 @@ import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { useState } from "react"
 
-const projects = [
+interface Project {
+  id: number
+  title: string
+  description: string
+  technologies: string[]
+  achievements: string
+  company: string
+  category: string
+  github?: string
+  liveUrl?: string
+}
+
+const projects: Project[] = [
   {
     id: 1,
     title: "🤖 GenAI Agent – AI-Powered Codebase Analysis Platform",
@@ -724,8 +736,7 @@ BUILT FOR SCALE
                     <div className="flex items-center justify-between mb-3">
                       <div>
                         <h5 className="text-lg font-semibold text-white">Ambola Health Pvt. Ltd</h5>
-                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Nov 2023 - Feb 2024</p>
-                            </div>
+                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Nov 2023 - Feb 2024</p>                            </div>
                           </div>
                     <ul className="space-y-2 text-white/80 text-sm ml-4">
                       <li>• Developed the <b>Bharat One Care</b> hospital management platform with <b>Node.js</b>, <b>React.js</b>, and <b>Firebase</b>, leveraging <b>TypeScript</b> for type-safe code and enabling patient, hospital, and doctor account workflows</li>
@@ -803,6 +814,7 @@ BUILT FOR SCALE
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">MongoDB</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Express.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">TypeScript</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Node.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Team Leadership</span>
                     </div>
@@ -831,9 +843,9 @@ BUILT FOR SCALE
                     <div className="flex items-start justify-between mb-3">
                       <h4 className="text-xl font-bold text-white">{project.title}</h4>
                       <div className="flex items-center gap-2">
-                        {(project as any).liveUrl && (
+                        {project.liveUrl && (
                           <Link
-                            href={(project as any).liveUrl}
+                            href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-300 hover:text-blue-200 transition-colors"
@@ -847,9 +859,9 @@ BUILT FOR SCALE
                             </svg>
                           </Link>
                         )}
-                        {(project as any).github && (
+                        {project.github && (
                           <Link
-                            href={(project as any).github}
+                            href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-purple-300 hover:text-purple-200 transition-colors"
