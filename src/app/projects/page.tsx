@@ -2,7 +2,18 @@
 
 import { motion } from "framer-motion"
 
-const projects = [
+interface Project {
+  id: number
+  title: string
+  description: string
+  technologies: string[]
+  achievements: string
+  company: string
+  github?: string
+  liveUrl?: string
+}
+
+const projects: Project[] = [
   {
     id: 1,
     title: "GenAI Agent – AI-Powered Codebase Analysis Platform",
@@ -121,9 +132,9 @@ export default function Projects() {
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <div className="flex items-center gap-2">
-                  {(project as any).liveUrl && (
+                  {project.liveUrl && (
                     <a
-                      href={(project as any).liveUrl}
+                      href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:text-primary/80 transition-colors"
@@ -137,9 +148,9 @@ export default function Projects() {
                       </svg>
                     </a>
                   )}
-                  {(project as any).github && (
+                  {project.github && (
                     <a
-                      href={(project as any).github}
+                      href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:text-primary/80 transition-colors"
