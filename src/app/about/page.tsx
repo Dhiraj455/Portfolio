@@ -17,10 +17,10 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
           <div>
             <p className="text-lg text-muted-foreground mb-6">
-              Software Engineer Intern at Fetch Rewards and Graduate Teaching Assistant at University of Illinois Chicago. Currently pursuing Master of Science in Computer Science with a 3.8 GPA, expected graduation in May 2026.
+              Software Engineer with experience building scalable Android and full-stack web applications using Kotlin, React.js, Node.js, TypeScript and AWS. Delivered production-grade features with secure REST APIs, focusing on performance, reliability, and clean architecture. Currently pursuing Master of Science in Computer Science with a 3.86 GPA at University of Illinois Chicago, expected graduation in May 2026.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              Passionate about mobile development using Kotlin and Jetpack Compose, full-stack engineering, and AI/ML applications. Previously completed Bachelor of Engineering in Information Technology with an outstanding CGPA of 9.63/10 from SIES Graduate School of Technology, Mumbai University.
+              Passionate about AI-powered systems, mobile innovation, and building high-impact products in fast-paced environments. Previously completed Bachelor of Engineering in Information Technology with an outstanding CGPA of 9.59/10 from SIES Graduate School of Technology, Mumbai University (Aug 2020 - Jun 2024).
             </p>
           </div>
           
@@ -43,21 +43,21 @@ export default function About() {
           <div className="bg-card p-6 rounded-lg border border-gray-200 dark:border-gray-800">
             <h3 className="text-xl font-semibold mb-3">Programming Languages</h3>
             <p className="text-muted-foreground mb-4">
-              C++, Python, Java, TypeScript, Kotlin, Ruby
+              C++, Python, Java, TypeScript, Kotlin, JavaScript
             </p>
           </div>
           
           <div className="bg-card p-6 rounded-lg border border-gray-200 dark:border-gray-800">
             <h3 className="text-xl font-semibold mb-3">Frontend & Mobile</h3>
             <p className="text-muted-foreground mb-4">
-              HTML, CSS, JavaScript, React.js, Bootstrap, Flutter, Jetpack Compose
+              Android SDK, Jetpack Compose, Kotlin, Flutter, React.js, Next.js, Tailwind CSS, D3.js, Three.js
             </p>
           </div>
           
           <div className="bg-card p-6 rounded-lg border border-gray-200 dark:border-gray-800">
             <h3 className="text-xl font-semibold mb-3">Backend & Data Science</h3>
             <p className="text-muted-foreground mb-4">
-              Node.js, Django, Flask, MongoDB, PostgreSQL, MySQL, TensorFlow, Scikit-learn
+              Node.js, Django, Flask, FastAPI, REST APIs, TensorFlow, Scikit-learn, LangChain, LLMs
             </p>
           </div>
         </div>

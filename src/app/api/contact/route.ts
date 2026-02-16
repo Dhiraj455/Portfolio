@@ -28,14 +28,32 @@ export async function POST(req: Request) {
     }
 
     const result = await resend.emails.send({
-      from: "Portfolio <hello@dhirajshelke.com>", 
+      from: "Portfolio <onboarding@resend.dev>", 
       to: ["dhirajshelke.hotmail@gmail.com"],
       replyTo: email,
       subject: `New message from ${name}: ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n---\nSent from portfolio contact form`,
     });
     
-    console.log('Email sent successfully:', result);
+    // Check if there's an error in the result
+    if (result.error) {
+      console.error('Resend API error:', result.error);
+      // Resend errors typically have a message property
+      const errorMessage = result.error.message || "Failed to send email. Please try again later.";
+      return Response.json({ 
+        error: errorMessage
+      }, { status: 500 });
+    }
+    
+    // Check if data is null (email not sent)
+    if (!result.data) {
+      console.error('Email not sent - result.data is null:', result);
+      return Response.json({ 
+        error: "Email service error. Please try again later or contact directly." 
+      }, { status: 500 });
+    }
+    
+    console.log('Email sent successfully:', result.data);
     
     return Response.json({ 
       success: true, 

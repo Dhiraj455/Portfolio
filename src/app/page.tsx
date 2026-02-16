@@ -10,66 +10,93 @@ import { useState } from "react"
 const projects = [
   {
     id: 1,
-    title: "🎯 Aim Assist",
-    description: "An IoT project used for training and education purposes of shooting to improve the accuracy of aim or users' shooting skills and provide real-time feedback and suggestions to the users. Features laser module in the gun and LDR sensors on shooting board to detect laser.",
-    technologies: ["Raspberry Pi", "Arduino Uno WIFI", "Next.js", "Flutter", "MongoDB"],
-    achievements: "Real-time feedback system, Cost-effective training solution",
+    title: "🤖 GenAI Agent – AI-Powered Codebase Analysis Platform",
+    description: "Built an intelligent code analysis system that automatically analyzes repositories, detects code smells, and provides AI-powered refactoring recommendations. Supports multi-language analysis with real-time chat interface for codebase understanding.",
+    technologies: ["FastAPI", "Next.js", "Python AST", "NetworkX", "FAISS", "Google Gemini API", "LangChain"],
+    achievements: "Multi-language code analysis, AI-powered refactoring recommendations, Real-time chat interface",
     company: "Personal Project",
-    category: "iot"
+    category: "ai",
+    github: "https://github.com/Dhiraj455/Codebase-Agent"
   },
   {
     id: 2,
-    title: "🖼️ Art Selling Website",
-    description: "An e-commerce web application serves as a platform for painters and sketch artists to exhibit their artwork and offer it for sale. Customers can place orders via Razorpay payment gateway and monitor order progress. Artists can track shipment status.",
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Razorpay"],
-    achievements: "Secure payment integration, Order tracking system",
+    title: "🎙️ AI Meeting Recorder – Android App with Real-Time Transcription",
+    description: "Developed an AI-powered app for recording meetings, real-time transcription, and generating actionable summaries. Integrated Google Gemini AI API for accurate transcription and summarization.",
+    technologies: ["Kotlin", "Jetpack Compose", "MVVM", "Google Gemini AI API"],
+    achievements: "Real-time transcription, AI-powered summaries, Production-ready Android app",
     company: "Personal Project",
-    category: "ecommerce"
+    category: "mobile",
+    github: "https://github.com/Dhiraj455/TwinMind-App"
   },
   {
     id: 3,
-    title: "💊 Vitamin Deficiency Detection",
-    description: "Developed a deep learning model using TensorFlow and Keras to detect vitamin deficiencies from images of nails, eyes, etc. Built and trained the model for image compression and deficiency analysis. Developed Android app using Kotlin and Jetpack Compose for real-time image analysis.",
-    technologies: ["Python", "TensorFlow", "Keras", "Kotlin", "Android Studio", "Jetpack Compose"],
-    achievements: "Deep learning model, Real-time image analysis, Android app",
+    title: "💊 Vitamin Deficiency Detection – Deep Learning Mobile Application",
+    description: "Built a CNN model to detect vitamin deficiencies from images, integrated into an Android app for real-time analysis. Enabled early detection to assist users in seeking timely medical consultation.",
+    technologies: ["Python", "TensorFlow", "Kotlin", "Android Studio", "Jetpack Compose"],
+    achievements: "CNN deep learning model, Real-time image analysis, Early detection system",
     company: "Personal Project",
-    category: "ml"
+    category: "ml",
+    github: "https://github.com/Dhiraj455/Vitamin-Deficiency-Recognition"
   },
   {
     id: 4,
-    title: "🎓 College Student Portal",
-    description: "Developed a website application to spread information about campus events and encourage a feeling of community among college students. Features announcements, sharing notes, blogs, and a forum for interaction between alumni and students.",
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux"],
-    achievements: "Community platform, Alumni-student interaction, Led team of developers",
-    company: "SIESGST",
-    category: "web"
+    title: "🖼️ Art Selling Website",
+    description: "An e-commerce web application serves as a platform for painters and sketch artists to exhibit their artwork and offer it for sale. Customers can place orders via Razorpay payment gateway and monitor order progress.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Razorpay"],
+    achievements: "Secure payment integration, Order tracking system, E-commerce platform",
+    company: "Personal Project",
+    category: "ecommerce",
+    github: "https://github.com/Dhiraj455/Art-Selling-Website",
+    liveUrl: "https://art-selling-website.vercel.app"
   },
   {
     id: 5,
-    title: "🥚 Automatic Egg Incubator",
-    description: "Developed an IoT project for simulating avian incubation by keeping eggs warm at a particular temperature range and in the correct humidity with a turning mechanism to hatch them. A microcontroller facilitates automation while offering the ability to retrieve data via a web application.",
-    technologies: ["Raspberry Pi", "MongoDB", "Next.js", "IoT Sensors"],
-    achievements: "Automated incubation, Web-based monitoring and control",
-    company: "Personal Project",
-    category: "iot"
+    title: "🎓 College Student Portal",
+    description: "Developed a website application to spread information about campus events and encourage community among college students. Features announcements, sharing notes, blogs, and a forum for interaction between alumni and students.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux"],
+    achievements: "Community platform, Alumni-student interaction, Led team of developers",
+    company: "SIESGST",
+    category: "web",
+    liveUrl: "https://portal.siesgst.ac.in/"
   },
   {
     id: 6,
+    title: "🎯 Aim Assist (Final Year Project)",
+    description: "An IoT project used for training and education purposes of shooting to improve the accuracy of aim or users' shooting skills and provide real-time feedback and suggestions to the users. It has a laser module in the gun instead of physical bullets to reduce training costs while maintaining accuracy and LDR sensors on shooting board to detect laser. The users' processed data with progress, feedback and suggestions are accessible to user from web and mobile application. The shooting board simulates real shooting scenarios with DC motors and wheels for movement.",
+    technologies: ["Raspberry Pi", "Arduino Uno WIFI", "Next.js", "Flutter", "MongoDB"],
+    achievements: "Real-time feedback system, Cost-effective training solution, IoT integration",
+    company: "Final Year Project",
+    category: "iot",
+    github: "https://github.com/Aim-Assist"
+  },
+  {
+    id: 7,
+    title: "🥚 Automatic Egg Incubator",
+    description: "Developed an IoT project for simulating avian incubation by keeping eggs warm at a particular temperature range and in the correct humidity with a turning mechanism to hatch them. A microcontroller, in conjunction with temperature and humidity sensors, facilitates automation while offering the ability to retrieve data via a web application and make manual adjustments using any device.",
+    technologies: ["Raspberry Pi", "MongoDB", "Next.js"],
+    achievements: "Automated incubation, Web-based monitoring and control, IoT sensors integration",
+    company: "Personal Project",
+    category: "iot",
+    github: "https://github.com/Dhiraj455/Egg-Incubator"
+  },
+  {
+    id: 8,
     title: "⚔️ Arena Platform Editor and Compiler",
     description: "Arena is a platform for promoting competitive programming and organizing contests on website. During contests, an editor and compiler are utilized for code debugging and compilation. The editor supports various programming languages, including C++, C, Python, Java, Go, and JavaScript.",
     technologies: ["Node.js", "Express.js", "MongoDB"],
-    achievements: "Multi-language support, Competitive programming platform",
+    achievements: "Multi-language support, Competitive programming platform, Real-time compilation",
     company: "Personal Project",
     category: "web"
   },
   {
-    id: 7,
+    id: 9,
     title: "🌾 Soil Analysis And Vendor Recommendation",
-    description: "A Machine learning project for analysing soil type and accordingly provide details about the suitable crop for cultivation and total cost of cultivation. The system recommends nearby vendors/retailers with maximum profit margin based on analysis information.",
+    description: "A Machine learning project for analysing soil type and accordingly provide details about the suitable crop for cultivation and total cost of cultivation. Comprehensive of the information provided by analysis the system recommends nearby vendor/ retailers with maximum profit margin.",
     technologies: ["Python", "Flask", "Bootstrap", "Machine Learning"],
-    achievements: "Soil analysis, Crop recommendation, Vendor matching",
+    achievements: "Soil analysis, Crop recommendation, Vendor matching, ML-based predictions",
     company: "Personal Project",
-    category: "ml"
+    category: "ml",
+    github: "https://github.com/Dhiraj455/Soil-Analysis-and-Vendor-Recommendation"
   }
 ]
 
@@ -158,6 +185,14 @@ function ContactSection() {
           <div className="flex items-center gap-3">
             <MapPin className="w-5 h-5 text-[#FF6A3D]" />
             <span className="text-white/80">Chicago, IL - 60607</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <svg className="w-5 h-5 text-[#FF6A3D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+13123754527" className="text-white/80 hover:text-white transition-colors">
+              (312) 375-4527
+            </a>
           </div>
           <div className="flex items-center gap-3">
             <svg className="w-5 h-5 text-[#FF6A3D]" viewBox="0 0 24 24" fill="currentColor">
@@ -315,7 +350,7 @@ export default function Home() {
             
             <h2 className="text-2xl lg:text-3xl font-extrabold mb-6 relative z-10 text-center whitespace-nowrap">Dhiraj Shelke</h2>
             <p className="mb-6 text-sm lg:text-base text-zinc-600 leading-relaxed relative z-10 text-center">
-Graduate Student at UIC | Passionate about Mobile Development, AI/ML, and Full-Stack Engineering
+              Software Engineer | Building Scalable Android & Full-Stack Applications | AI-Powered Systems & Mobile Innovation
             </p>
             
             {/* Socials */}
@@ -361,10 +396,8 @@ Graduate Student at UIC | Passionate about Mobile Development, AI/ML, and Full-S
               <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-extrabold tracking-tight text-white leading-none">SOFTWARE</div>
               <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-extrabold tracking-tight text-white/20 mb-8 leading-none">ENGINEER</div>
               <p className="max-w-3xl text-lg lg:text-xl text-white/70 leading-relaxed">
-  Software Engineer with experience building production-ready mobile and full-stack applications. 
-  Graduate student in Computer Science at the University of Illinois Chicago, with a strong focus on 
-  Android development, scalable systems, and data-driven, user-centric products.
-</p>
+                Software Engineer with experience building scalable Android and full-stack web applications using Kotlin, React.js, Node.js, TypeScript and AWS. Delivered production-grade features with secure REST APIs, focusing on performance, reliability, and clean architecture. Passionate about AI-powered systems, mobile innovation, and building high-impact products in fast-paced environments.
+              </p>
 
             </motion.div>
 
@@ -376,7 +409,7 @@ Graduate Student at UIC | Passionate about Mobile Development, AI/ML, and Full-S
               className="mb-8 grid grid-cols-3 gap-4 lg:gap-6"
             >
               <div>
-                <div className="text-3xl lg:text-4xl xl:text-5xl font-extrabold text-white mb-2">3.8</div>
+                <div className="text-3xl lg:text-4xl xl:text-5xl font-extrabold text-white mb-2">3.86</div>
                 <div className="text-xs lg:text-sm text-white/60 leading-tight">GRADUATE<br/>GPA</div>
               </div>
               <div>
@@ -470,14 +503,15 @@ BUILT FOR SCALE
                 className="rounded-2xl p-8 border border-white/20 bg-gradient-to-br from-blue-500/10 to-purple-500/10"
               >
                 <div className="text-center mb-6">
-                  <div className="text-5xl font-extrabold text-white mb-2">3.8</div>
+                  <div className="text-5xl font-extrabold text-white mb-2">3.86</div>
                   <div className="text-sm text-white/60">GRADUATE GPA</div>
                   <div className="text-xs text-white/50 mt-1">Out of 4.0</div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-white">🎯 University of Illinois Chicago</h3>
-                <p className="text-white/80 mb-2 font-medium">Master of Science in Computer Science</p>
-                <p className="text-white/70 text-sm mb-4">Expected May 2026</p>
-                <p className="text-white/70 text-sm">Chicago, IL</p>
+                <p className="text-white/80 mb-2 font-medium">Master of Science, Computer Science</p>
+                <p className="text-white/70 text-sm mb-2">Aug 2024 - May 2026</p>
+                <p className="text-white/70 text-sm mb-3">Chicago, IL</p>
+                <p className="text-white/60 text-xs">Coursework: Visual Data Science, Computer Algorithms, UX Research, Query Processing of Databases, Security and Privacy in Networked and Distributed Systems</p>
               </motion.div>
               
               <motion.div
@@ -492,9 +526,10 @@ BUILT FOR SCALE
                   <div className="text-xs text-white/50 mt-1">Out of 10.0</div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-white">⚡ SIES Graduate School of Technology</h3>
-                <p className="text-white/80 mb-2 font-medium">Bachelor of Engineering in Information Technology</p>
-                <p className="text-white/70 text-sm mb-4">Mumbai University, India</p>
-                <p className="text-white/70 text-sm">June 2024</p>
+                <p className="text-white/80 mb-2 font-medium">Bachelor of Engineering, Information Technology</p>
+                <p className="text-white/70 text-sm mb-2">Mumbai University, India</p>
+                <p className="text-white/70 text-sm mb-3">Aug 2020 - Jun 2024</p>
+                <p className="text-white/60 text-xs">Coursework: Artificial Intelligence, Advanced Data Structures and Analysis, Database Management System, Computer Networking, Computer Organization and Architecture, Software Engineering, Image Processing</p>
               </motion.div>
             </div>
           </div>
@@ -511,8 +546,7 @@ BUILT FOR SCALE
             >
               <h2 className="display-1 font-extrabold mb-6 text-white">ABOUT</h2>
               <p className="text-lg text-white/70 max-w-3xl mx-auto">
-                Software Engineer Intern at Fetch Rewards and Graduate Teaching Assistant at UIC. Currently pursuing Master of Science in Computer Science with a 3.8 GPA. 
-                Passionate about mobile development, full-stack engineering, AI/ML applications, and building innovative solutions that solve real-world problems.
+                Software Engineer with experience building scalable Android and full-stack web applications using Kotlin, React.js, Node.js, TypeScript and AWS. Delivered production-grade features with secure REST APIs, focusing on performance, reliability, and clean architecture. Passionate about AI-powered systems, mobile innovation, and building high-impact products in fast-paced environments.
               </p>
             </motion.div>
 
@@ -529,15 +563,15 @@ BUILT FOR SCALE
                 <div className="space-y-3 text-sm">
                   <div>
                     <span className="text-white font-medium">Languages:</span>
-                    <span className="text-white/70 ml-2">C++, Python, Java, TypeScript, Kotlin, Ruby</span>
+                    <span className="text-white/70 ml-2">C++, Python, Java, TypeScript, Kotlin, JavaScript</span>
                   </div>
                   <div>
-                    <span className="text-white font-medium">Frontend:</span>
-                    <span className="text-white/70 ml-2">HTML, CSS, JavaScript, React.js, Bootstrap, Flutter, Jetpack Compose</span>
+                    <span className="text-white font-medium">Frontend & Mobile:</span>
+                    <span className="text-white/70 ml-2">Android SDK, Jetpack Compose, Kotlin, Flutter, React.js, Next.js, Tailwind CSS, D3.js, Three.js</span>
                   </div>
                   <div>
-                    <span className="text-white font-medium">Backend:</span>
-                    <span className="text-white/70 ml-2">Node.js, Django, Flask, REST APIs</span>
+                    <span className="text-white font-medium">Backend & APIs:</span>
+                    <span className="text-white/70 ml-2">Node.js, Django, Flask, FastAPI, REST APIs</span>
                   </div>
                 </div>
               </motion.div>
@@ -553,8 +587,8 @@ BUILT FOR SCALE
                 </h3>
                 <div className="space-y-3 text-sm">
                   <div>
-                    <span className="text-white font-medium">ML/AI:</span>
-                    <span className="text-white/70 ml-2">NumPy, Pandas, Matplotlib, Seaborn, TensorFlow, Scikit-learn</span>
+                    <span className="text-white font-medium">Data Science & ML:</span>
+                    <span className="text-white/70 ml-2">NumPy, Pandas, Matplotlib, Seaborn, TensorFlow, Scikit-learn, LangChain, LLMs</span>
                   </div>
                   <div>
                     <span className="text-white font-medium">Databases:</span>
@@ -562,7 +596,7 @@ BUILT FOR SCALE
                   </div>
                   <div>
                     <span className="text-white font-medium">Cloud & Tools:</span>
-                    <span className="text-white/70 ml-2">AWS (EC2, Lambda, S3), Docker, GitHub, CI/CD, Linux, Android Studio</span>
+                    <span className="text-white/70 ml-2">AWS (EC2, Lambda, S3), Docker, CI/CD, GitHub, Jenkins, Linux, Android Studio, Jira, Postman</span>
                   </div>
                 </div>
               </motion.div>
@@ -624,7 +658,7 @@ BUILT FOR SCALE
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-1">Fetch Rewards</h3>
-                    <p className="text-white/60 mb-1">Software Engineer Intern</p>
+                    <p className="text-white/60 mb-1">Android Software Engineer Intern</p>
                     <p className="text-white/50 text-sm">Chicago, IL • May 2025 - Aug 2025</p>
                   </div>
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center p-2">
@@ -634,17 +668,19 @@ BUILT FOR SCALE
                     </div>
                     </div>
                 <ul className="space-y-3 text-white/80 text-sm">
-                  <li>• Built high-performance Android apps using Kotlin and Jetpack Compose, collaborating with cross-functional teams to integrate backend services</li>
-                  <li>• Developed new features for the Points Hub, one of the most visited screens in the app, enhancing UI/UX with animations, improving navigation, and increasing user engagement</li>
-                  <li>• Increased modularization of app modules by extracting features into decoupled data, domain, feature, and UI modules, reducing build times and improving maintainability</li>
-                  <li>• Participated in AI Week Hackathon, developing an AI-powered Slack bot for QA assistance to identify the responsible QA person for task completion</li>
-                  <li>• Contributed to app stability, achieving 99.91% crash-free sessions reported by Crashlytics</li>
+                  <li>• Developed production-grade <b>Android applications</b> with <b>Kotlin</b>, <b>Jetpack Compose</b>, and <b>MVVM</b>, integrating backend APIs via <b>Retrofit</b> to deliver a stable app that passed QA with zero critical bugs</li>
+                  <li>• Shipped new <b>Points Hub</b> features, improving navigation and user engagement</li>
+                  <li>• Modularized app features into decoupled <b>data</b>, <b>domain</b>, and <b>UI modules</b>, reducing build times by <b>54%+</b> and significantly improving long-term maintainability</li>
+                  <li>• Maintained <b>99.91% crash-free sessions</b> by monitoring crashes with <b>Firebase Crashlytics</b>, debugging production issues, and proactively resolving edge-case failures</li>
+                  <li>• Built an <b>AI Slack bot</b> during <b>AI Week Hackathon</b> leveraging <b>LLMs</b> and the <b>OpenAI API</b> to automate QA task assignment, reducing manual coordination effort for the QA team</li>
                 </ul>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Kotlin</span>
                   <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Jetpack Compose</span>
-                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Android</span>
-                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Crashlytics</span>
+                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">MVVM</span>
+                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Retrofit</span>
+                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Firebase Crashlytics</span>
+                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">OpenAI API</span>
                   </div>
               </motion.div>
 
@@ -688,18 +724,21 @@ BUILT FOR SCALE
                     <div className="flex items-center justify-between mb-3">
                       <div>
                         <h5 className="text-lg font-semibold text-white">Ambola Health Pvt. Ltd</h5>
-                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Nov 2023 - Jan 2024</p>
+                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Nov 2023 - Feb 2024</p>
                             </div>
                           </div>
                     <ul className="space-y-2 text-white/80 text-sm ml-4">
-                      <li>• Developed the Bharat One Care website for managing patient, hospital, and doctor accounts</li>
-                      <li>• Contributed to UI development (Node.js, React.js) and handled server hosting, deployment, and backend services using Firebase</li>
+                      <li>• Developed the <b>Bharat One Care</b> hospital management platform with <b>Node.js</b>, <b>React.js</b>, and <b>Firebase</b>, leveraging <b>TypeScript</b> for type-safe code and enabling patient, hospital, and doctor account workflows</li>
+                      <li>• Implemented secure <b>RESTful APIs</b> with <b>Flask</b> and <b>JWT</b>, set up <b>CI/CD pipelines</b> in <b>Jira</b> and <b>Jenkins</b>, and deployed the services on <b>AWS EC2</b> and <b>Firebase hosting</b>, reducing downtime and ensuring reliable data access</li>
                     </ul>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Node.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">TypeScript</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Firebase</span>
-                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Web Development</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Flask</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">AWS EC2</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">CI/CD</span>
                     </div>
                         </div>
                         
@@ -707,22 +746,23 @@ BUILT FOR SCALE
                   <div>
                     <div className="flex items-center justify-between mb-3">
                       <div>
-                        <h5 className="text-lg font-semibold text-white">Westinbridge Consulting Pvt Ltd</h5>
-                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • April 2023 - May 2023</p>
+                        <h5 className="text-lg font-semibold text-white">Westinbridge Consulting Pvt. Ltd</h5>
+                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Apr 2023 - Jul 2023</p>
                         </div>
                         </div>
                     <ul className="space-y-2 text-white/80 text-sm ml-4">
-                      <li>• Worked as a full stack developer on a website for people to find rooms and flatmates in Germany</li>
-                      <li>• Enhanced the user-interface using React.js for a more user-friendly experience</li>
-                      <li>• Created and managed APIs for getting flatmates using Nest.js and PostgreSQL as database</li>
-                      <li>• Worked on web-scraping to get data of rooms from different websites</li>
+                      <li>• Developed a full-stack platform for finding rooms and flatmates with <b>React.js</b> front end, <b>NestJS</b> back end, and <b>PostgreSQL</b> database, and deployed it on <b>GCP App Engine</b> via a <b>GitHub CI/CD pipeline</b>, improving the matching process</li>
+                      <li>• Designed and implemented <b>REST APIs</b> with <b>Django REST framework</b>, containerized services with <b>Docker</b>, and performed web scraping using <b>Python</b> and <b>BeautifulSoup</b> to aggregate housing data for real-time updates</li>
+                      <li>• Enhanced <b>UI/UX</b> for better user engagement and usability</li>
                             </ul>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
-                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Nest.js</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">NestJS</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">PostgreSQL</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Django REST</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Docker</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">GCP</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Web Scraping</span>
-                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Full Stack</span>
                     </div>
                           </div>
                           
@@ -788,25 +828,59 @@ BUILT FOR SCALE
                     transition={{ duration: 0.6 }}
                     className="rounded-2xl p-6 bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300"
                   >
-                    <h4 className="text-xl font-bold mb-3 text-white">{project.title}</h4>
-                  <p className="text-white/80 mb-4 text-sm leading-relaxed">{project.description}</p>
+                    <div className="flex items-start justify-between mb-3">
+                      <h4 className="text-xl font-bold text-white">{project.title}</h4>
+                      <div className="flex items-center gap-2">
+                        {(project as any).liveUrl && (
+                          <Link
+                            href={(project as any).liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-200 transition-colors"
+                            aria-label="Live Demo"
+                            title="Live Demo"
+                          >
+                            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                              <polyline points="15 3 21 3 21 9"></polyline>
+                              <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                          </Link>
+                        )}
+                        {(project as any).github && (
+                          <Link
+                            href={(project as any).github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-purple-300 hover:text-purple-200 transition-colors"
+                            aria-label="GitHub"
+                            title="GitHub"
+                          >
+                            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                          </Link>
+                        )}
+                      </div>
+                    </div>
+                    <p className="text-white/80 mb-4 text-sm leading-relaxed">{project.description}</p>
                     
-                  <div className="mb-4 p-3 bg-white/10 rounded-lg">
+                    <div className="mb-4 p-3 bg-white/10 rounded-lg">
                       <p className="text-sm font-medium text-purple-300">
                         🚀 {project.achievements}
-                    </p>
-                  </div>
+                      </p>
+                    </div>
                     
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
                           className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium border border-purple-400/30"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </motion.div>
                 ))}
               </div>
