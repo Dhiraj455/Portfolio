@@ -42,6 +42,16 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    title: "📚 AI Research Agent – Cited Research Reports from Questions",
+    description: "Full-stack research assistant that turns natural-language questions into structured reports with citations. Backend uses LangGraph to orchestrate a multi-step pipeline: plan search angles, run web search (DuckDuckGo), fetch and parse content (Trafilatura, Beautiful Soup, PyPDF), extract evidence, check coverage, then write, verify, and revise reports using LLMs (Gemini/OpenAI). JWT auth with bcrypt and per-user chat isolation; Next.js chat UI with loading states and PDF export.",
+    technologies: ["Python", "FastAPI", "LangGraph", "Pydantic", "DuckDuckGo", "Trafilatura", "Next.js", "React", "TypeScript", "Tailwind CSS"],
+    achievements: "LangGraph multi-step pipeline, JWT auth & per-user isolation, Markdown/PDF export",
+    company: "Personal Project",
+    category: "ai",
+    github: "https://github.com/Dhiraj455/AI-Research-Agent"
+  },
+  {
+    id: 4,
     title: "💊 Vitamin Deficiency Detection – Deep Learning Mobile Application",
     description: "Built a CNN model to detect vitamin deficiencies from images, integrated into an Android app for real-time analysis. Enabled early detection to assist users in seeking timely medical consultation.",
     technologies: ["Python", "TensorFlow", "Kotlin", "Android Studio", "Jetpack Compose"],
@@ -51,7 +61,7 @@ const projects: Project[] = [
     github: "https://github.com/Dhiraj455/Vitamin-Deficiency-Recognition"
   },
   {
-    id: 4,
+    id: 5,
     title: "🖼️ Art Selling Website",
     description: "An e-commerce web application serves as a platform for painters and sketch artists to exhibit their artwork and offer it for sale. Customers can place orders via Razorpay payment gateway and monitor order progress.",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Razorpay"],
@@ -62,7 +72,7 @@ const projects: Project[] = [
     liveUrl: "https://art-selling-website.vercel.app"
   },
   {
-    id: 5,
+    id: 6,
     title: "🎓 College Student Portal",
     description: "Developed a website application to spread information about campus events and encourage community among college students. Features announcements, sharing notes, blogs, and a forum for interaction between alumni and students.",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux"],
@@ -72,7 +82,7 @@ const projects: Project[] = [
     liveUrl: "https://portal.siesgst.ac.in/"
   },
   {
-    id: 6,
+    id: 7,
     title: "🎯 Aim Assist (Final Year Project)",
     description: "An IoT project used for training and education purposes of shooting to improve the accuracy of aim or users' shooting skills and provide real-time feedback and suggestions to the users. It has a laser module in the gun instead of physical bullets to reduce training costs while maintaining accuracy and LDR sensors on shooting board to detect laser. The users' processed data with progress, feedback and suggestions are accessible to user from web and mobile application. The shooting board simulates real shooting scenarios with DC motors and wheels for movement.",
     technologies: ["Raspberry Pi", "Arduino Uno WIFI", "Next.js", "Flutter", "MongoDB"],
@@ -82,7 +92,7 @@ const projects: Project[] = [
     github: "https://github.com/Aim-Assist"
   },
   {
-    id: 7,
+    id: 8,
     title: "🥚 Automatic Egg Incubator",
     description: "Developed an IoT project for simulating avian incubation by keeping eggs warm at a particular temperature range and in the correct humidity with a turning mechanism to hatch them. A microcontroller, in conjunction with temperature and humidity sensors, facilitates automation while offering the ability to retrieve data via a web application and make manual adjustments using any device.",
     technologies: ["Raspberry Pi", "MongoDB", "Next.js"],
@@ -92,7 +102,7 @@ const projects: Project[] = [
     github: "https://github.com/Dhiraj455/Egg-Incubator"
   },
   {
-    id: 8,
+    id: 9,
     title: "⚔️ Arena Platform Editor and Compiler",
     description: "Arena is a platform for promoting competitive programming and organizing contests on website. During contests, an editor and compiler are utilized for code debugging and compilation. The editor supports various programming languages, including C++, C, Python, Java, Go, and JavaScript.",
     technologies: ["Node.js", "Express.js", "MongoDB"],
@@ -101,7 +111,7 @@ const projects: Project[] = [
     category: "web"
   },
   {
-    id: 9,
+    id: 10,
     title: "🌾 Soil Analysis And Vendor Recommendation",
     description: "A Machine learning project for analysing soil type and accordingly provide details about the suitable crop for cultivation and total cost of cultivation. Comprehensive of the information provided by analysis the system recommends nearby vendor/ retailers with maximum profit margin.",
     technologies: ["Python", "Flask", "Bootstrap", "Machine Learning"],
