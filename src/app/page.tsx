@@ -372,7 +372,7 @@ export default function Home() {
             
             <h2 className="text-2xl lg:text-3xl font-extrabold mb-6 relative z-10 text-center whitespace-nowrap">Dhiraj Shelke</h2>
             <p className="mb-6 text-sm lg:text-base text-zinc-600 leading-relaxed relative z-10 text-center">
-              Software Engineer | Building Scalable Android & Full-Stack Applications | AI-Powered Systems & Mobile Innovation
+              AI-focused Software Engineer building LLM-powered systems, agent workflows, and scalable applications. Strong background in full-stack and Android development.
             </p>
             
             {/* Socials */}
@@ -418,7 +418,7 @@ export default function Home() {
               <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-extrabold tracking-tight text-white leading-none">SOFTWARE</div>
               <div className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px] font-extrabold tracking-tight text-white/20 mb-8 leading-none">ENGINEER</div>
               <p className="max-w-3xl text-lg lg:text-xl text-white/70 leading-relaxed">
-                Software Engineer with experience building scalable Android and full-stack web applications using Kotlin, React.js, Node.js, TypeScript and AWS. Delivered production-grade features with secure REST APIs, focusing on performance, reliability, and clean architecture. Passionate about AI-powered systems, mobile innovation, and building high-impact products in fast-paced environments.
+                AI-focused Software Engineer with experience building LLM-powered systems, agent workflows, and scalable applications. Skilled in translating research into production systems with a focus on reliability, evaluation, and real-world deployment. Strong background in full-stack and Android development.
               </p>
 
             </motion.div>
@@ -568,7 +568,7 @@ BUILT FOR SCALE
             >
               <h2 className="display-1 font-extrabold mb-6 text-white">ABOUT</h2>
               <p className="text-lg text-white/70 max-w-3xl mx-auto">
-                Software Engineer with experience building scalable Android and full-stack web applications using Kotlin, React.js, Node.js, TypeScript and AWS. Delivered production-grade features with secure REST APIs, focusing on performance, reliability, and clean architecture. Passionate about AI-powered systems, mobile innovation, and building high-impact products in fast-paced environments.
+                AI-focused Software Engineer with experience building LLM-powered systems, agent workflows, and scalable applications. Skilled in translating research into production systems with a focus on reliability, evaluation, and real-world deployment. Strong background in full-stack and Android development.
               </p>
             </motion.div>
 
