@@ -17,10 +17,10 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
           <div>
             <p className="text-lg text-muted-foreground mb-6">
-              Software Engineer with experience building scalable Android and full-stack web applications using Kotlin, React.js, Node.js, TypeScript and AWS. Delivered production-grade features with secure REST APIs, focusing on performance, reliability, and clean architecture. Currently pursuing Master of Science in Computer Science with a 3.86 GPA at University of Illinois Chicago, expected graduation in May 2026.
+              AI-focused Software Engineer with experience building LLM-powered systems, agent workflows, and scalable applications. Skilled in translating research into production systems with a focus on reliability, evaluation, and real-world deployment. Strong background in full-stack and Android development.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              Passionate about AI-powered systems, mobile innovation, and building high-impact products in fast-paced environments. Previously completed Bachelor of Engineering in Information Technology with an outstanding CGPA of 9.59/10 from SIES Graduate School of Technology, Mumbai University (Aug 2020 - Jun 2024).
+              Currently pursuing Master of Science in Computer Science with a 3.86 GPA at University of Illinois Chicago, expected graduation in May 2026. Previously completed Bachelor of Engineering in Information Technology with an outstanding CGPA of 9.59/10 from SIES Graduate School of Technology, Mumbai University (Aug 2020 - Jun 2024).
             </p>
           </div>
           

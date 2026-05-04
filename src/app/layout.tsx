@@ -14,7 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://dhirajshelke.com'),
   title: "Dhiraj Shelke - Software Engineer",
-  description: "Software Engineer Intern at Fetch Rewards | Graduate Student at UIC | Passionate about Mobile Development, Full-Stack Engineering, and AI/ML applications.",
+  description: "AI-focused Software Engineer building LLM-powered systems, agent workflows, and scalable applications. MS Computer Science @ UIC. Full-stack and Android development.",
   keywords: ["software engineer", "kotlin", "android", "react", "python", "tensorflow", "mobile development", "full stack"],
   authors: [{ name: "Dhiraj Shelke" }],
   icons: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     title: "Dhiraj Shelke - Software Engineer",
-    description: "Software Engineer Intern at Fetch Rewards | Graduate Student at UIC | Passionate about Mobile Development, Full-Stack Engineering, and AI/ML applications.",
+    description: "AI-focused Software Engineer building LLM-powered systems, agent workflows, and scalable applications. MS Computer Science @ UIC. Full-stack and Android development.",
     images: [
       {
         url: "/DhirajPhoto.jpeg",
