@@ -680,8 +680,8 @@ BUILT FOR SCALE
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-1">Fetch Rewards</h3>
-                    <p className="text-white/60 mb-1">Android Software Engineer Intern</p>
-                    <p className="text-white/50 text-sm">Chicago, IL • May 2025 - Aug 2025</p>
+                    <p className="text-white/60 mb-1">Software Engineering Intern</p>
+                    <p className="text-white/50 text-sm">Chicago, IL • May 2025 - Sep 2025</p>
                   </div>
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center p-2">
                       <svg height="42" viewBox="0 0 104 65" fill="#FFA900" xmlns="http://www.w3.org/2000/svg">
@@ -690,18 +690,19 @@ BUILT FOR SCALE
                     </div>
                     </div>
                 <ul className="space-y-3 text-white/80 text-sm">
-                  <li>• Developed production-grade <b>Android applications</b> with <b>Kotlin</b>, <b>Jetpack Compose</b>, and <b>MVVM</b>, integrating backend APIs via <b>Retrofit</b> to deliver a stable app that passed QA with zero critical bugs</li>
-                  <li>• Shipped new <b>Points Hub</b> features, improving navigation and user engagement</li>
-                  <li>• Modularized app features into decoupled <b>data</b>, <b>domain</b>, and <b>UI modules</b>, reducing build times by <b>54%+</b> and significantly improving long-term maintainability</li>
-                  <li>• Maintained <b>99.91% crash-free sessions</b> by monitoring crashes with <b>Firebase Crashlytics</b>, debugging production issues, and proactively resolving edge-case failures</li>
-                  <li>• Built an <b>AI Slack bot</b> during <b>AI Week Hackathon</b> leveraging <b>LLMs</b> and the <b>OpenAI API</b> to automate QA task assignment, reducing manual coordination effort for the QA team</li>
+                  <li>• Developed production-grade Android features using <b>Kotlin</b>, <b>Jetpack Compose</b>, and <b>MVVM</b>, ensuring high performance and scalability</li>
+                  <li>• Worked on receipt processing workflows, contributing to improvements in <b>OCR-based</b> data extraction pipelines for structured receipt parsing</li>
+                  <li>• Collaborated with backend and ML pipelines to improve data accuracy and validation of extracted entities from receipts</li>
+                  <li>• Monitored and debugged production issues using <b>Firebase Crashlytics</b>, maintaining <b>99.9%+ crash-free sessions</b></li>
+                  <li>• Improved app modularity by restructuring into <b>data</b>, <b>domain</b>, and <b>UI layers</b>, reducing build time by <b>50%+</b></li>
+                  <li>• Built an <b>LLM-powered</b> internal automation tool (Slack bot) to assist QA workflows, leveraging <b>OpenAI APIs</b></li>
                 </ul>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Kotlin</span>
                   <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Jetpack Compose</span>
                   <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">MVVM</span>
-                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Retrofit</span>
                   <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">Firebase Crashlytics</span>
+                  <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">OCR</span>
                   <span className="bg-purple-500/20 text-purple-200 px-2 py-1 rounded text-xs font-medium">OpenAI API</span>
                   </div>
               </motion.div>
@@ -746,20 +747,22 @@ BUILT FOR SCALE
                     <div className="flex items-center justify-between mb-3">
                       <div>
                         <h5 className="text-lg font-semibold text-white">Ambola Health Pvt. Ltd</h5>
-                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Nov 2023 - Feb 2024</p>                            </div>
+                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Sep 2023 - Feb 2024</p>                            </div>
                           </div>
                     <ul className="space-y-2 text-white/80 text-sm ml-4">
-                      <li>• Developed the <b>Bharat One Care</b> hospital management platform with <b>Node.js</b>, <b>React.js</b>, and <b>Firebase</b>, leveraging <b>TypeScript</b> for type-safe code and enabling patient, hospital, and doctor account workflows</li>
-                      <li>• Implemented secure <b>RESTful APIs</b> with <b>Flask</b> and <b>JWT</b>, set up <b>CI/CD pipelines</b> in <b>Jira</b> and <b>Jenkins</b>, and deployed the services on <b>AWS EC2</b> and <b>Firebase hosting</b>, reducing downtime and ensuring reliable data access</li>
+                      <li>• Developed a hospital management platform using <b>Node.js</b>, <b>React.js</b>, and <b>Firebase</b></li>
+                      <li>• Built secure <b>REST APIs</b> using <b>Flask</b> and <b>JWT</b>, deployed on <b>AWS EC2</b></li>
+                      <li>• Worked on data analysis and validation pipelines to ensure correctness and consistency of healthcare records</li>
+                      <li>• Designed workflows for data verification and anomaly detection, improving reliability of patient and operational data</li>
+                      <li>• Contributed to backend systems handling structured medical data and reporting</li>
                     </ul>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Node.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
-                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">TypeScript</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Firebase</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Flask</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">JWT</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">AWS EC2</span>
-                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">CI/CD</span>
                     </div>
                         </div>
                         
@@ -768,22 +771,27 @@ BUILT FOR SCALE
                     <div className="flex items-center justify-between mb-3">
                       <div>
                         <h5 className="text-lg font-semibold text-white">Westinbridge Consulting Pvt. Ltd</h5>
-                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Apr 2023 - Jul 2023</p>
+                        <p className="text-white/60 text-sm">Web Developer Intern • Remote • Mar 2023 - Jul 2023</p>
                         </div>
                         </div>
                     <ul className="space-y-2 text-white/80 text-sm ml-4">
-                      <li>• Developed a full-stack platform for finding rooms and flatmates with <b>React.js</b> front end, <b>NestJS</b> back end, and <b>PostgreSQL</b> database, and deployed it on <b>GCP App Engine</b> via a <b>GitHub CI/CD pipeline</b>, improving the matching process</li>
-                      <li>• Designed and implemented <b>REST APIs</b> with <b>Django REST framework</b>, containerized services with <b>Docker</b>, and performed web scraping using <b>Python</b> and <b>BeautifulSoup</b> to aggregate housing data for real-time updates</li>
-                      <li>• Enhanced <b>UI/UX</b> for better user engagement and usability</li>
+                      <li>• Built a full-stack platform using <b>React.js</b>, <b>NestJS</b>, and <b>PostgreSQL</b>, deployed via <b>CI/CD</b> on <b>GCP</b></li>
+                      <li>• Developed web scraping pipelines (<b>Python</b>, <b>BeautifulSoup</b>) to collect large-scale housing data</li>
+                      <li>• Applied data processing and ML-based ranking techniques to improve matching between users and listings</li>
+                      <li>• Designed APIs using <b>Django REST framework</b> and containerized services with <b>Docker</b></li>
+                      <li>• Improved system performance and usability through optimized <b>UI/UX</b></li>
                             </ul>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">React.js</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">NestJS</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">PostgreSQL</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Python</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">BeautifulSoup</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">ML</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Django REST</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Docker</span>
                       <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">GCP</span>
-                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">Web Scraping</span>
+                      <span className="bg-orange-500/20 text-orange-200 px-2 py-1 rounded text-xs font-medium">CI/CD</span>
                     </div>
                           </div>
                           
