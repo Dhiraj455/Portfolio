@@ -681,7 +681,7 @@ BUILT FOR SCALE
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-1">Fetch Rewards</h3>
                     <p className="text-white/60 mb-1">Software Engineering Intern</p>
-                    <p className="text-white/50 text-sm">Chicago, IL • May 2025 - Sep 2025</p>
+                    <p className="text-white/50 text-sm">Chicago, IL • May 2025 - Aug 2025</p>
                   </div>
                     <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center p-2">
                       <svg height="42" viewBox="0 0 104 65" fill="#FFA900" xmlns="http://www.w3.org/2000/svg">
@@ -707,11 +707,39 @@ BUILT FOR SCALE
                   </div>
               </motion.div>
 
-              {/* UIC Graduate Teaching Assistant */}
+              {/* Rush University Graduate Research Assistant */}
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
+                className="rounded-3xl p-8 border border-white/20 bg-gradient-to-br from-teal-500/10 to-cyan-500/10"
+              >
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-white mb-1">Rush University</h3>
+                  <p className="text-white/60 mb-1">Graduate Research Assistant – Android Development</p>
+                  <p className="text-white/50 text-sm">Chicago, IL • Jan 2025 - May 2025</p>
+                </div>
+                <ul className="space-y-3 text-white/80 text-sm">
+                  <li>• Developed an Android application using <b>Kotlin</b> and <b>Jetpack Compose</b> for real-time wearable sensor data visualization and monitoring</li>
+                  <li>• Integrated <b>BLE</b> communication with Moticon OpenGo insoles to stream and process biomechanical sensor data from multiple devices simultaneously</li>
+                  <li>• Implemented <b>MVVM</b> architecture, <b>Coroutines</b>, and <b>StateFlow</b> for efficient asynchronous data handling and real-time UI updates</li>
+                  <li>• Collaborated with research teams on wearable healthcare and gait analysis applications, focusing on sensor reliability and mobile performance optimization</li>
+                </ul>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="bg-teal-500/20 text-teal-200 px-2 py-1 rounded text-xs font-medium">Kotlin</span>
+                  <span className="bg-teal-500/20 text-teal-200 px-2 py-1 rounded text-xs font-medium">Jetpack Compose</span>
+                  <span className="bg-teal-500/20 text-teal-200 px-2 py-1 rounded text-xs font-medium">MVVM</span>
+                  <span className="bg-teal-500/20 text-teal-200 px-2 py-1 rounded text-xs font-medium">BLE</span>
+                  <span className="bg-teal-500/20 text-teal-200 px-2 py-1 rounded text-xs font-medium">Coroutines</span>
+                  <span className="bg-teal-500/20 text-teal-200 px-2 py-1 rounded text-xs font-medium">StateFlow</span>
+                </div>
+              </motion.div>
+
+              {/* UIC Graduate Teaching Assistant */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.35 }}
                 className="rounded-3xl p-8 border border-white/20 bg-gradient-to-br from-blue-500/10 to-green-500/10"
               >
                 <div className="flex items-center justify-between mb-6">
